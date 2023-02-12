@@ -1,3 +1,7 @@
+* {
+    font-family: 'raleway',sans-serif;
+}
+
 #quote-box {
     width: 40%;
     background-color: #fff;
@@ -6,4 +10,83 @@
 #new-quote {
     color: #fff;
     transition: color 2s ease-out;
+}
+
+#quote-icon {
+    margin-right: 5px;
+}
+
+#author {
+    font-size: 1.1em;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #quote-box {
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #text{
+        font-size: 1.3em;
+    }
+
+
+    #button-div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #new-quote {
+        font-size: 0.6em;
+        order: 2;
+    }
+
+    #tweet-quote {
+        font-size: 0.6em;
+        order: 1;
+    }
+}
+
+/* Medium devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 900px) {
+    #quote-box {
+        width: 80%;
+        height: 40%;
+        /* padding-top: 50px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #button-div {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #author {
+        font-size: 1.2em;
+    }
+
+    #new-quote {
+        font-size: 1em;
+        margin-right: 20px;
+        order: 2;
+    }
+
+    #tweet-quote {
+        font-size: 1em;
+        margin-left: 20px;
+        order: 1;
+    }
 }
