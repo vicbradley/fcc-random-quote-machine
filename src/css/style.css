@@ -1,0 +1,9 @@
+#quote-box {
+    width: 40%;
+    background-color: #fff;
+}
+
+#new-quote {
+    color: #fff;
+    transition: color 2s ease-out;
+}
